@@ -1,0 +1,69 @@
+//Angus MacDonald 21/9/18 Tutor: Karen MacKay
+//Rectangle class for Tutorial 1: Shape Problem.
+
+package Shapes;
+
+import java.util.Scanner;
+
+public class Rectangle {
+
+	
+	int height;
+	int width;
+	int area;
+	
+	public Rectangle()
+	{
+		
+	}
+	
+	public Rectangle(int height, int width, int area)
+	{
+		this.height = height;
+		this.width = width;
+		this.area = area;
+	}
+	
+	public void getHeight()
+	{
+		Scanner kboard = new Scanner(System.in);
+		System.out.println("Please enter height");
+		height = kboard.nextInt();
+	}
+	
+	public void getWidth()
+	{
+		Scanner kboard = new Scanner(System.in);
+		System.out.println("Please enter width");
+		width = kboard.nextInt();
+	}
+	
+	public int calculateArea()
+	{
+		return area = (height*width);
+		
+	}
+	
+	public boolean isSquare()
+	{
+		if(height == width)
+		{
+			return true;
+		}
+		else
+			return false;
+	
+	}
+	
+	public void displayAll()
+	{
+		if (isSquare() == true)
+		{
+			System.out.println("Height: "+height+" Width: "+width+" Area: "+area+" Shape: This is a square.");
+		}
+		else
+		{
+			System.out.println("Height: "+height+" Width: "+width+" Area: "+area+" Shape: This is a rectangle.");
+		}
+	}
+}
