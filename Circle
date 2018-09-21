@@ -1,0 +1,52 @@
+//Angus MacDonald 21/9/18 Tutor: Karen MacKay
+//Circle class for Tutorial 1: Shape Problem.
+
+
+package Shapes;
+
+import java.util.Scanner;
+import java.text.*;
+
+
+public class Circle {
+
+	
+	double radius;
+	double area;
+	DecimalFormat df = new DecimalFormat("#.##");
+	String deciForm;
+	
+	public Circle()
+	{
+
+
+	}
+	
+	public Circle(double radius)
+	{
+		this.radius = radius;
+		this.area = area;
+	
+	
+		
+	}
+	public void getRadius()
+	{
+		Scanner kboard = new Scanner(System.in);
+		System.out.println("Please enter radius");
+		radius = kboard.nextDouble();
+	}
+	
+	public String calculateArea()
+	{
+		area = (2*3.14*radius);
+		return deciForm = df.format(area);
+		
+	}
+	
+	public void displayAll()
+	{
+		System.out.println("Radius: "+radius+" Area: "+deciForm+ " Shape: This is a circle.");
+	}
+
+}
