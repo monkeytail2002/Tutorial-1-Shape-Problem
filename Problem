@@ -1,0 +1,47 @@
+//Angus MacDonald 21/9/18 Tutor: Karen MacKay
+//Problem class for Tutorial 1: Shape Problem.
+
+package Shapes;
+
+import java.util.Scanner;
+
+
+public class Problem {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner kboard = new Scanner(System.in);
+		Rectangle rectangle = new Rectangle();
+		Circle circle = new Circle();
+		int press = 0;
+		//rectangle.displayAll();
+		//circle.displayAll();
+		
+		System.out.println("Shapes Problem");
+		System.out.println("Press 1 for rectangle, 2 for circle, 3 to exit:");
+		press = kboard.nextInt();
+		
+		while (press !=3)
+			{
+				if(press == 1)
+				{
+					rectangle.getHeight();
+					rectangle.getWidth();
+					rectangle.calculateArea();
+					rectangle.displayAll();
+					break;
+				}
+				else if (press == 2)
+				{
+					circle.getRadius();
+					circle.calculateArea();
+					circle.displayAll();
+					break;
+					
+				}
+				break;
+			}		
+		}
+		
+
+}
